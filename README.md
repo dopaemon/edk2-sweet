@@ -1,7 +1,5 @@
 Attempt to create a minimal EDK2 for Redmi K20 (Transplanted from Pixel3XL).
 
-[![Build Status](https://dev.azure.com/zhuoweizhang/edk2-pixel3/_apis/build/status/Pixel3Dev.edk2-pixel3?branchName=master)](https://dev.azure.com/zhuoweizhang/edk2-pixel3/_build/latest?definitionId=1&branchName=master)
-
 ## Status
 Can boot winpe
 
