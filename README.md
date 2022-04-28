@@ -1,16 +1,11 @@
-Attempt to create a minimal EDK2 for SM8250 (Transplanted from Pixel3XL).
+Attempt to create a minimal EDK2 for Redmi K20 (Transplanted from Pixel3XL).
 
 [![Build Status](https://dev.azure.com/zhuoweizhang/edk2-pixel3/_apis/build/status/Pixel3Dev.edk2-pixel3?branchName=master)](https://dev.azure.com/zhuoweizhang/edk2-pixel3/_build/latest?definitionId=1&branchName=master)
 
 ## Status
-Because some dxe conflicts lead to hwio/map problems, uefi is incomplete, only ufs works, and if it is sometimes repaired later, Linux will have usb power supply directly.
-As to Windows, minimal has proved that it is no longer effective in 7150 warehouse. if minimal acpi is used, the equipment will stay at the logo, and sc8280 equipment will appear soon, but unfortunately, it is probably on the same platform as sm8350.
-Therefore, 8250 doesn't want Windows anymore, it's quite difficult. After that, it will make some adjustments on QRD to verify some problems, which will only make Linux better. Windows is very difficult to start, even if it is started, it's not very useful, and it doesn't have a similar wp platform.
+Can boot winpe
 
-
-Boot Windows is stuck in the logo
-
-
+No usb
 
 Boot Linux must add kernel parameters:clk_ignore_unused
 
