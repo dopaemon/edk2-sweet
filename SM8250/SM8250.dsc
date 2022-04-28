@@ -141,7 +141,7 @@
 
   gSM8250TokenSpaceGuid.PcdMipiFrameBufferAddress|0x9c000000
   gSM8250TokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-  gSM8250TokenSpaceGuid.PcdMipiFrameBufferHeight|2400
+  gSM8250TokenSpaceGuid.PcdMipiFrameBufferHeight|2340
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
