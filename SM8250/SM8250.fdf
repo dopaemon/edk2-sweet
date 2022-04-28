@@ -185,33 +185,33 @@ READ_LOCK_STATUS   = TRUE
     SECTION UI = "UsbfnDwc3Dxe"
   }
   FILE DRIVER = cd823a4d-7dec-4531-ae5d-4134fa4127b8 {
-    SECTION DXE_DEPEX = Dxe/depex/UsbConfigDxe.depex
-    SECTION PE32 =Dxe/all/UsbConfigDxe.efi
+    SECTION DXE_DEPEX = Dxe/UsbConfigDxe/UsbConfigDxe.depex
+    SECTION PE32 =Dxe/UsbConfigDxe/UsbConfigDxe.efi
     SECTION UI = "UsbConfigDxe"
   }
 
 
     FILE DRIVER = 0A134F0E-075E-40B3-9C63-3B3906804663 {
-    SECTION DXE_DEPEX = Dxe/usb/UsbInitDxe/UsbInitDxe.depex
-    SECTION PE32 = Dxe/all/UsbInitDxe.efi
+    SECTION DXE_DEPEX = Dxe/UsbInitDxe/UsbInitDxe.depex
+    SECTION PE32 = Dxe/UsbInitDxe/UsbInitDxe.efi
     SECTION UI = "UsbInitDxe"
  }
 
     FILE DRIVER = 3299a266-15f0-4346-8318-716336736d3e {
-    SECTION DXE_DEPEX = Dxe/use/UsbDeviceDxe/UsbDeviceDxe.depex
-    SECTION PE32 = Dxe/all/UsbDeviceDxe.efi
+    SECTION DXE_DEPEX = Dxe/UsbDeviceDxe/UsbDeviceDxe.depex
+    SECTION PE32 = Dxe/UsbDeviceDxe/UsbDeviceDxe.efi
     SECTION UI = "UsbDeviceDxe"
   }
 
 
   FILE DRIVER = 2D2E62CF-9ECF-43B7-8219-94E7FC713DFE {
-   SECTION PE32 = Dxe/all/UsbKbDxe.efi
+   SECTION PE32 = Dxe/UsbKbDxe/UsbKbDxe.efi
     SECTION UI = "UsbKbDxe"
   }
 
   FILE DRIVER = 5AF77F10-90DF-4E7E-8325-A17EC09D5443{
-    SECTION DXE_DEPEX = Dxe/usb/UsbMsdDxe/UsbMsdDxe.depex
-   SECTION PE32 = Dxe/all/UsbMsdDxe.efi
+    SECTION DXE_DEPEX = Dxe/UsbMsdDxe/UsbMsdDxe.depex
+   SECTION PE32 = Dxe/UsbMsdDxe/UsbMsdDxe.efi
     SECTION UI = "UsbMsdDxe"
  }
 
