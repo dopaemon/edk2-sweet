@@ -104,7 +104,7 @@
   #gArmTokenSpaceGuid.PcdSystemMemorySize|0x200000000
 
   # We only boot one processor here!
-  gArmPlatformTokenSpaceGuid.PcdCoreCount|8
+  gArmPlatformTokenSpaceGuid.PcdCoreCount|1
   gArmPlatformTokenSpaceGuid.PcdClusterCount|1
 
   #
