@@ -1,5 +1,7 @@
 Attempt to create a minimal EDK2 for Redmi K20/MI 9T (Transplanted from Pixel3XL).
 
+Snapdragon 730
+
 ## Status
 Can boot winpe
 
