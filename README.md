@@ -3,7 +3,6 @@ Attempt to create a minimal EDK2 for Redmi K20/MI 9T (Transplanted from Pixel3XL
 ## Status
 Can boot winpe
 
-No usb
 
 Boot Linux must add kernel parameters:clk_ignore_unused
 
