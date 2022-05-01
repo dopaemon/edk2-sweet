@@ -272,7 +272,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
   
   #KeyPad 
-  INF SM8250/Drivers/KeypadDxe/KeypadDxe.inf
+ # INF SM8250/Drivers/KeypadDxe/KeypadDxe.inf
   INF MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
   INF MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
   INF MdeModulePkg/Bus/Isa/IsaBusDxe/IsaBusDxe.inf
