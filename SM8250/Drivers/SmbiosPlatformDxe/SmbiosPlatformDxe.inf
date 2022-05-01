@@ -37,7 +37,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  SM8250/SM8250.dsc
+  SM8250/SM8250.dec
 
 [LibraryClasses]
   ArmLib
