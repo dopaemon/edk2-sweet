@@ -208,6 +208,9 @@
   # USB Host Support
   #
   MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
+  MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
+  MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
+  MdeModulePkg/Bus/Isa/IsaBusDxe/IsaBusDxe.inf
 
   #
   # USB Mass Storage Support
