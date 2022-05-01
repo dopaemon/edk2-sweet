@@ -4,7 +4,7 @@ Snapdragon 730
 
 ## Status
 Can boot winpe
-
+UFS
 
 Boot Linux must add kernel parameters:clk_ignore_unused
 
