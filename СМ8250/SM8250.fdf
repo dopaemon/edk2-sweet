@@ -270,6 +270,13 @@ READ_LOCK_STATUS   = TRUE
   #
   INF SM8250/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
   INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
+  
+  #KeyPad 
+  INF SM8250/Drivers/KeypadDxe/KeypadDxe.inf
+  INF MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
+  INF MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
+  INF MdeModulePkg/Bus/Isa/IsaBusDxe.inf
+
 
   #
   # UEFI applications
