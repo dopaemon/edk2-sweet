@@ -29,9 +29,12 @@
 !include SM8250/CommonDsc.dsc.inc
 
 [LibraryClasses.common]
+  GpioTlmmLib|SM8250/GPLDriver/GpioTlmmDxe/GpioTlmmLib.inf
+  Pm8x41Lib|SM8250/Drivers/Pm8x41Dxe/Pm8x41Lib.inf
+  KeypadDeviceHelperLib|SM8250/Library/KeypadDeviceHelperLib/KeypadDeviceHelperLib.inf
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmPlatformLib|SM8250/Library/SM8250Lib/SM8250Lib.inf
-
+  KeypadDeviceImplLib|SM8250/Library/KeypadDeviceImplLib/KeypadDeviceImplLib.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   UefiBootManagerLib|MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
   PlatformBootManagerLib|ArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
@@ -49,8 +52,7 @@
 
   # USB Requirements
   UefiUsbLib|MdePkg/Library/UefiUsbLib/UefiUsbLib.inf
-
-  # Network Libraries
+ # Network Libraries
   UefiScsiLib|MdePkg/Library/UefiScsiLib/UefiScsiLib.inf
   NetLib|NetworkPkg/Library/DxeNetLib/DxeNetLib.inf
   DpcLib|NetworkPkg/Library/DxeDpcLib/DxeDpcLib.inf
@@ -104,22 +106,26 @@
   #gArmTokenSpaceGuid.PcdSystemMemorySize|0x200000000
 
   # We only boot one processor here!
-  gArmPlatformTokenSpaceGuid.PcdCoreCount|1
-  gArmPlatformTokenSpaceGuid.PcdClusterCount|1
+  gArmPlatformTokenSpaceGuid.PcdCoreCount|8
+  gArmPlatformTokenSpaceGuid.PcdClusterCount|2
 
-  #
-  # ARM PrimeCell
-  #
-
-  #
-  # ARM General Interrupt Controller
-  #
-  gArmTokenSpaceGuid.PcdGicDistributorBase|0x17a00000
-  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x17a60000
-
-  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|0x12
-  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|0x13
-
+#USB
+  gQcomTokenSpaceGuid.PcdUsb30Ee1Irq|163 
+  gQcomTokenSpaceGuid.PcdUsb30Base|0xF9200000 
+  gQcomTokenSpaceGuid.PcdUsb30ScratchBase|0xF92F8800 # 
+  gQcomTokenSpaceGuid.PcdUsb30QmpPhyBase|0xF9B38000 # ARM PrimeCell 
+  gQcomTokenSpaceGuid.PcdUsb2PhyBase|0xF9B39000 # 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortPowerDownOffset|0x000000B4 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortUtmiCtrl2Offset|0x000000C4 # 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune1Offset|0x00000080 # ARM General  Interrupt Controller 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune2Offset|0x00000084 # 
+  gArmTokenSpaceGuid.PcdGicDistributorBase|0x17a00000 
+  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x17a60000 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune3Offset|0x00000088 
+  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|0x12 
+  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|0x13 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune4Offset|0x0000008C
+  gQcomTokenSpaceGuid.PcdUsb2GccPhyBcr|0xFC4004B8
   # GUID of the UI app
   gEfiMdeModulePkgTokenSpaceGuid.PcdBootManagerMenuFile|{ 0x21, 0xaa, 0x2c, 0x46, 0x14, 0x76, 0x03, 0x45, 0x83, 0x6e, 0x8a, 0xb6, 0xf4, 0x66, 0x23, 0x31 }
 
@@ -208,10 +214,8 @@
   # USB Host Support
   #
   MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
-  MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
-  MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
-  MdeModulePkg/Bus/Isa/IsaBusDxe/IsaBusDxe.inf
-
+  MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
+  MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
   #
   # USB Mass Storage Support
   #
@@ -242,8 +246,12 @@
   MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-  SM8250/AcpiTables/AcpiTables.inf
+#  SM8250/AcpiTables/AcpiTables.inf
 
+  #keypad
+  SM8250/Drivers/GenericKeypadDeviceDxe/GenericKeypadDeviceDxe.inf
+  SM8250/Drivers/KeypadDxe/KeypadDxe.inf
+  MdeModulePkg/Bus/Usb/UsbMouseAbsolutePointerDxe/UsbMouseAbsolutePointerDxe.inf
   #
   # SMBIOS Support
   #

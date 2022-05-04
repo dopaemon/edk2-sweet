@@ -30,13 +30,32 @@
 
 [Guids.common]
   gSM8250TokenSpaceGuid        = { 0x99a14446, 0xaad7, 0xe460, {0xb4, 0xe5, 0x1f, 0x79, 0xaa, 0xa4, 0x93, 0xfd } }
+  gQcomTokenSpaceGuid = { 0x59f58449, 0x99e1, 0x4a19, { 0x86, 0x65, 0x12, 0xd6, 0x37, 0xed, 0xbe, 0x5e } }
 
+[Protocols]
+  gEFIDroidKeypadDeviceProtocolGuid = { 0xb27625b5, 0x0b6c, 0x4614, { 0xaa, 0x3c, 0x33, 0x13, 0xb5, 0x1d, 0x36, 0x46 } }
+  gQcomGpioTlmmProtocolGuid = { 0x8054947b, 0x3223, 0x407a, { 0xa1, 0xcc, 0x31, 0x22, 0x2f, 0x80, 0x66, 0x40 } }
+  gQcomPm8x41ProtocolGuid = { 0xb6e811d5, 0x1dce, 0x4ccb, { 0xaf, 0x21, 0xe9, 0xf7, 0xef, 0x68, 0x60, 0x7b } }
 [PcdsFixedAtBuild.common]
   # Simple FrameBuffer
   gSM8250TokenSpaceGuid.PcdMipiFrameBufferAddress|0x00400000|UINT32|0x0000a400
   gSM8250TokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
-  gSM8250TokenSpaceGuid.PcdMipiFrameBufferHeight|1920|UINT32|0x0000a402
+  gSM8250TokenSpaceGuid.PcdMipiFrameBufferHeight|2340|UINT32|0x0000a402
   gSM8250TokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403
 
-  gSM8250TokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x0000a404
-  gSM8250TokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|2400|UINT32|0x0000a405
+  gSM8250TokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x0000a404 
+  gSM8250TokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|2340|UINT32|0x0000a405 
+  gQcomTokenSpaceGuid.PcdUsb30Ee1Irq|0|UINT64|0x00000300 
+  gQcomTokenSpaceGuid.PcdUsb30Base|0|UINT64|0x00000301 
+  gQcomTokenSpaceGuid.PcdUsb30ScratchBase|0|UINT64|0x00000302 
+  gQcomTokenSpaceGuid.PcdUsb30QmpPhyBase|0|UINT64|0x00000303 
+  gQcomTokenSpaceGuid.PcdUsb2PhyBase|0|UINT64|0x00000305 
+  gQcomTokenSpaceGuid.PcdUsb2GccPhyBcr|0|UINT64|0x00000306 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortPowerDownOffset|0|UINT64|0x00000307 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortUtmiCtrl2Offset|0|UINT64|0x00000308 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune1Offset|0|UINT64|0x00000309 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune2Offset|0|UINT64|0x0000030a 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune3Offset|0|UINT64|0x0000030b 
+  gQcomTokenSpaceGuid.PcdUsb2PhyPortTune4Offset|0|UINT64|0x0000030c 
+  gQcomTokenSpaceGuid.PcdUsbHsBase|0|UINT64|0x0000030d
+  gQcomTokenSpaceGuid.PcdUsbHsIrq|0|UINT64|0x0000030e
