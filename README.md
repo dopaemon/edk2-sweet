@@ -15,8 +15,8 @@ First, clone EDK2.
 
 ```
 cd ..
-git clone https://github.com/tianocore/edk2.git --recursive
-git clone https://github.com/tianocore/edk2-platforms.git
+git clone https://github.com/Cl1nkkk/edk2 --recursive
+git clone https://github.com/Cl1nkkk/edk2-platforms.git
 ```
 
 You should have all three directories side by side.
