@@ -16,7 +16,7 @@ First, clone EDK2.
 ```
 cd ..
 git clone https://github.com/Cl1nkkk/edk2-davinci
-git clone https://github.com/Cl1nkkk/edk2 --recursive
+git clone https://github.com/Cl1nkkk/edk2
 git clone https://github.com/Cl1nkkk/edk2-platforms.git
 ```
 
