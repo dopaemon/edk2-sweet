@@ -9,20 +9,8 @@ UFS
 Boot Linux must add kernel parameters:clk_ignore_unused
 
 ## Building
-Tested on Ubuntu 18.04.
 
-First, clone EDK2.
-
-```
-cd ..
-git clone https://github.com/Cl1nkkk/edk2-davinci
-git clone https://github.com/Cl1nkkk/edk2
-git clone https://github.com/Cl1nkkk/edk2-platforms.git
-```
-
-You should have all three directories side by side.
-
-Next, install dependencies:
+Install dependencies:
 
 18.04:
 
