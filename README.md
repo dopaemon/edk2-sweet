@@ -5,6 +5,7 @@ Snapdragon 730
 ## Status
 Can boot winpe
 UFS
+USB(need powered usb hub)
 
 Boot Linux must add kernel parameters:clk_ignore_unused
 
