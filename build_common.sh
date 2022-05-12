@@ -1,3 +1,15 @@
+if ! [ -f edk2/edksetup.sh ] && ! [ -f ../edk2/edksetup.sh ]
+then	set -e
+	echo "Updating submodules"s
+	git submodule init;git submodule update --depth 1
+	pushd edk2
+	git submodule init;git submodule update
+	popd
+	pushd F11/Library/SimpleInit
+	git submodule init;git submodule update
+	popd
+	set +e
+fi
 for i in "${EDK2}" ./edk2 ../edk2
 do	if [ -n "${i}" ]&&[ -f "${i}/edksetup.sh" ]
 	then	_EDK2="$(realpath "${i}")"
@@ -27,7 +39,7 @@ export WORKSPACE="${PWD}"
 . "${_EDK2}"/edksetup.sh
 
 mkdir -p "${_SIMPLE_INIT}/build"
-sudo bash "${_SIMPLE_INIT}/scripts/gen-rootfs-source.sh" \
+bash "${_SIMPLE_INIT}/scripts/gen-rootfs-source.sh" \
 	"${_SIMPLE_INIT}" \
 	"${_SIMPLE_INIT}/build"
 
