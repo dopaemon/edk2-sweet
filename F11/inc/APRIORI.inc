@@ -112,11 +112,11 @@ FILE DRIVER = 8E9BD160-B184-11DF-94E2-0800200C9A66 {
 
 
 
-#    FILE DRIVER = 2D7A83E3-E343-4FFB-9109-631F2EE11694 {
-#    SECTION DXE_DEPEX = Dxe/depex/ScmDxe.depex
-#        SECTION PE32 = Dxe/all/ScmDxe.efi
- #       SECTION UI = "ScmDxe"
- # }
+#   FILE DRIVER = 2D7A83E3-E343-4FFB-9109-631F2EE11694 {
+#   SECTION DXE_DEPEX = Dxe/depex/ScmDxe.depex
+#       SECTION PE32 = Dxe/all/ScmDxe.efi
+#       SECTION UI = "ScmDxe"
+#   }
 
 
 
@@ -138,20 +138,9 @@ INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
 INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
 INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
 
+  INF FatPkg/EnhancedFatDxe/Fat.inf
 
-
-
-       INF FatPkg/EnhancedFatDxe/Fat.inf
-
-
-
-
-
-
-
-
-
-    FILE DRIVER =  7db0793a-4402-4be1-906e-d0fabad2707e{
+  FILE DRIVER =  7db0793a-4402-4be1-906e-d0fabad2707e{
     SECTION DXE_DEPEX = Dxe/depex/DDRInfoDxe.depex
     SECTION PE32 = Dxe/all/DDRInfoDxe.efi
     SECTION UI = "DDRInfoDxe"
@@ -191,19 +180,19 @@ FILE DRIVER = 569EA0DE-B557-4043-84CF-01103FE516E5 {
     SECTION UI = "TzDxe"
   }
 
-FILE DRIVER = 04DE8591-D2B3-4077-BBBE-B12070094EB6 {
+  FILE DRIVER = 04DE8591-D2B3-4077-BBBE-B12070094EB6 {
     SECTION DXE_DEPEX = Dxe/use/I2C/I2C.depex
         SECTION PE32 = Dxe/all/I2C.efi
        SECTION UI = "I2C"
   }
 
-   FILE DRIVER = 1d317734-4083-47c6-83ea-e3a42f2a6bff {
+  FILE DRIVER = 1d317734-4083-47c6-83ea-e3a42f2a6bff {
   SECTION DXE_DEPEX = Dxe/depex/PILDxe.depex
     SECTION PE32 = Dxe/all/PILDxe.efi
     SECTION UI = "PILDxe"
-   }
+  }
 
-FILE DRIVER = 1B52138D-3FA3-4E50-B958-20887353F809 {
+  FILE DRIVER = 1B52138D-3FA3-4E50-B958-20887353F809 {
     SECTION DXE_DEPEX = Dxe/use/CPRDxe/CPRDxe.depex
         SECTION PE32 = Dxe/all/CPRDxe.efi
         SECTION UI = "CPRDxe"
@@ -226,24 +215,24 @@ FILE DRIVER = 1B52138D-3FA3-4E50-B958-20887353F809 {
 
 
   FILE DRIVER = 94f8a6a7-dc34-4101-88c1-99179cceae83 {
-   SECTION DXE_DEPEX = Dxe/use/UsbfnDwc3Dxe/UsbfnDwc3Dxe.depex
-   SECTION PE32 = Dxe/all/UsbfnDwc3Dxe.efi
+    SECTION DXE_DEPEX = Dxe/use/UsbfnDwc3Dxe/UsbfnDwc3Dxe.depex
+    SECTION PE32 = Dxe/all/UsbfnDwc3Dxe.efi
     SECTION UI = "UsbfnDwc3Dxe"
   }
 
-FILE DRIVER = BEB12BEE-F6E1-11E1-9FB8-6C626DE4AEB1 {
+  FILE DRIVER = BEB12BEE-F6E1-11E1-9FB8-6C626DE4AEB1 {
     SECTION PE32 = Dxe/all/XhciPciEmulation.efi
     SECTION UI = "XhciPciEmulation"
   }
 
 
-FILE DRIVER =B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
+  FILE DRIVER =B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
     SECTION DXE_DEPEX = Dxe/usb/XhciDxe/XhciDxe.depex
     SECTION PE32 = Dxe/all/XhciDxe.efi
     SECTION UI = "XhciDxe"
   }
 
-FILE DRIVER = 240612B7-A063-11d4-9A3A-0090273FC14D {
+  FILE DRIVER = 240612B7-A063-11d4-9A3A-0090273FC14D {
     SECTION PE32 = Dxe/all/UsbBusDxe.efi
     SECTION UI = "UsbBusDxe"
   }
@@ -281,11 +270,7 @@ FILE DRIVER = 5AF77F10-90DF-4E7E-8325-A17EC09D5443{
     SECTION UI = "UsbfnChgDxe"
   }
 
-
-
-
-
-    FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
+  FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
     SECTION DXE_DEPEX = Dxe/use/ButtonsDxe/ButtonsDxe.depex
     SECTION PE32 = Dxe/all/ButtonsDxe.efi
     SECTION UI = "ButtonsDxe"
@@ -297,8 +282,6 @@ FILE DRIVER = 5AF77F10-90DF-4E7E-8325-A17EC09D5443{
 #   SECTION PE32 = Dxe/all/TsensDxe.efi
 #    SECTION UI = "TsensDxe"
 #}
-
-
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
 }
