@@ -109,7 +109,7 @@
 
   # We only boot one processor here!
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
-  gArmPlatformTokenSpaceGuid.PcdClusterCount|1
+  gArmPlatformTokenSpaceGuid.PcdClusterCount|2
 
   #
   # ARM PrimeCell
