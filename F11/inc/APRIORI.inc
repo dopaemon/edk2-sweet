@@ -98,7 +98,7 @@ APRIORI DXE {
   INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
   INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
-  INF MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
+  # INF MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
 
   FILE DRIVER = 0d35cd8e-97ea-4f9a-96af-0f0d89f76567 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/UFSDxe/UFSDxe.depex
