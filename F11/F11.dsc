@@ -103,9 +103,9 @@
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVersionString|L"SM7150"
 
-  # System Memory (8GB)
+  # System Memory (6GB)
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0x200000000
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x180000000
 
   # We only boot one processor here!
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8

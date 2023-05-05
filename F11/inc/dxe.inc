@@ -243,23 +243,23 @@ FILE DRIVER =B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
 #
 #  FILE DRIVER = F09AD92E-485C-9CDB-3E05-3385C38F94CC {
 #    SECTION DXE_DEPEX = Dxe/depex/TsensDxe.depex
-#   SECTION PE32 = Dxe/all/TsensDxe.efi
+#    SECTION PE32 = Dxe/all/TsensDxe.efi
 #    SECTION UI = "TsensDxe"
 #  }
 #
 
 #FILE DRIVER = F09AD92E-4E91-490F-AB99-E69939B840B2 {
 #    SECTION DXE_DEPEX = Dxe/depex/LimitsDxe.depex
-#        SECTION PE32 = Dxe/all/LimitsDxe.efi
-#       SECTION UI = "LimitsDxe"
+#    SECTION PE32 = Dxe/all/LimitsDxe.efi
+#    SECTION UI = "LimitsDxe"
 #  }
 
 #FILE DRIVER = 569EA0DE-B557-4043-84CF-01103FE516E5 {
 #    SECTION DXE_DEPEX = Dxe/depex/GpiDxe.depex
-#        SECTION PE32 = Dxe/all/GpiDxe.efi
-#       SECTION UI = "GpiDxe"
- # }
- # FILE DRIVER =  51D4273A-C3FB-48FD-B5B7-97CE091A58A6 {
- #   SECTION PE32 = Dxe/all/UsbfnChgDxe.efi
+#    SECTION PE32 = Dxe/all/GpiDxe.efi
+#    SECTION UI = "GpiDxe"
+# }
+# FILE DRIVER =  51D4273A-C3FB-48FD-B5B7-97CE091A58A6 {
+#    SECTION PE32 = Dxe/all/UsbfnChgDxe.efi
 #    SECTION UI = "UsbfnChgDxe"
 #  }
