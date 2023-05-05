@@ -217,7 +217,7 @@ FILE DRIVER =B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
 
 FILE DRIVER = 5BD181DB-0487-4F1A-AE73-820E165611B3 {
    SECTION DXE_DEPEX = Dxe/use/ButtonsDxe/ButtonsDxe.depex
-   SECTION PE32 = Dxe/use/ButtonsDxe.efi
+   SECTION PE32 = Dxe/use/ButtonsDxe/ButtonsDxe.efi
    SECTION UI = "ButtonsDxe"
 }
 
