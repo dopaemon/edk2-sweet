@@ -68,7 +68,7 @@ DATA = {
   0x00, 0x00, 0x00, 0x00                          # res5
 }
 
-0x00008000|0x003f8000
+0x00000000|0x00700000
 gArmTokenSpaceGuid.PcdFvBaseAddress|gArmTokenSpaceGuid.PcdFvSize
 FV = FVMAIN_COMPACT
 
