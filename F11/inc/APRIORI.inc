@@ -168,6 +168,6 @@ APRIORI DXE {
   }
 
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
-  INF MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
+  # INF MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
 }
