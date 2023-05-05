@@ -106,10 +106,6 @@ READ_LOCK_STATUS   = TRUE
 
 !include F11/inc/APRIORI.inc
 
-
-
-
-
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
 
   #
@@ -123,11 +119,6 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
-
-
-
-
-
 
   #
   # Multiple Console IO support
@@ -158,10 +149,6 @@ READ_LOCK_STATUS   = TRUE
 
   INF F11/F11Dxe/F11Dxe.inf
   INF F11/SimpleFbDxe/SimpleFbDxe.inf
-
-
-
-
 
   #
   # USB Host Support
@@ -200,7 +187,6 @@ READ_LOCK_STATUS   = TRUE
 # INF RuleOverride = ACPITABLE F11/AcpiTables/AcpiTables.inf
 
 
-
 #    FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
 #	SECTION RAW = F11/AcpiTables/mini/dbg2.aml
 #	SECTION RAW = F11/AcpiTables/mini/gtdt.aml
@@ -211,8 +197,6 @@ READ_LOCK_STATUS   = TRUE
 #	SECTION RAW = F11/AcpiTables/mini/pptt.bin     
 #	SECTION UI = "AcpiTables"
 #  }
-
-
 
 !include F11/acpi.inc
 
