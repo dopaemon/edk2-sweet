@@ -105,10 +105,7 @@ READ_LOCK_CAP      = TRUE
 READ_LOCK_STATUS   = TRUE
 
 !include F11/inc/APRIORI.inc
-
-
-
-
+!include F11/inc/sweet.inc
 
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
 
@@ -123,11 +120,6 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
-
-
-
-
-
 
   #
   # Multiple Console IO support
