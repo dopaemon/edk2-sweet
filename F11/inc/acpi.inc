@@ -20,8 +20,6 @@ SECTION RAW = F11/AcpiTables/7180/TPM2.acpi
 #SECTION RAW = F11/AcpiTables/mini/3.raw
 #SECTION RAW = F11/AcpiTables/mini/4.raw
 
-
-
 SECTION UI = "AcpiTables" 
 
 }
