@@ -60,7 +60,7 @@ APRIORI DXE {
 
   FILE DRIVER = 9A00771F-36D4-4DD5-8916-C48ED9B16B86 {
      SECTION DXE_DEPEX = Dxe/use/HALIOMMUDxe/HALIOMMUDxe.depex
-     SECTION PE32 = Dxe/use/HALIOMMUDxe/HALIOMMUDxe.efi
+     SECTION PE32 = Dxe/all/HALIOMMUDxe.efi
      SECTION UI = "HALIOMMU"
   }
 
@@ -259,7 +259,7 @@ APRIORI DXE {
 
   FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
       SECTION DXE_DEPEX = Dxe/use/ButtonsDxe/ButtonsDxe.depex
-      SECTION PE32 = Dxe/use/ButtonsDxe/ButtonsDxe.efi
+      SECTION PE32 = Dxe/all/ButtonsDxe.efi
       SECTION UI = "ButtonsDxe"
   }
 
