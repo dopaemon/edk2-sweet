@@ -1,19 +1,33 @@
 APRIORI DXE {
-
   #
   # PI DXE Drivers producing Architectural Protocols (EFI Services)
   #
   INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
-  # INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
-  # INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
   INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
   INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
   INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
-  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
-
-  INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
+  INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+
+  #
+  # FAT filesystem + GPT/MBR partitioning
+  #
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+
+  INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
+  INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
+  INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+  INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+  INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+  INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+
+  INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
+  INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
+  INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+
 
   FILE DRIVER = f541d663-4a48-40aa-aabf-ff158ccae34c {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/SmemDxe/SmemDxe.depex
@@ -44,8 +58,6 @@ APRIORI DXE {
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/PlatformInfoDxeDriver/PlatformInfoDxeDriver.efi
     SECTION UI = "PlatformInfoDxeDriver"
   }
-
-  INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
 
   FILE DRIVER = E43128A8-8692-42B6-8AFA-676158578D18 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ULogDxe/ULogDxe.depex
@@ -112,26 +124,6 @@ APRIORI DXE {
     SECTION UI = "TzDxe"
   }
 
-  INF FatPkg/EnhancedFatDxe/Fat.inf
-
-  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
-
-  INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
-  INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
-  INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
-  INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
-  INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
-  INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
-
-!if $(SECURE_BOOT_ENABLE) == TRUE
-  INF SecurityPkg/VariableAuthenticated/SecureBootConfigDxe/SecureBootConfigDxe.inf
-  INF SecurityPkg/VariableAuthenticated/SecureBootDefaultKeysDxe/SecureBootDefaultKeysDxe.inf
-!endif
-
-  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
-
-  INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
-
   FILE DRIVER = 8681cc5a-0df6-441e-b4b8-e915c538f067 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/DALTLMM/DALTLMM.depex
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/DALTLMM/DALTLMM.efi
@@ -143,6 +135,11 @@ APRIORI DXE {
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/SPMI/SPMI.efi
     SECTION UI = "SPMI"
   }
+
+  INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+  INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+  INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+  INF FatPkg/EnhancedFatDxe/Fat.inf
 
   FILE DRIVER = 7DB0793A-4402-4BE1-906E-D0FABAD2707E {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/DDRInfoDxe/DDRInfoDxe.depex
@@ -156,18 +153,11 @@ APRIORI DXE {
     SECTION UI = "PmicDxe"
   }
 
-  # INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
-  INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
-  INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
-  INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
-
   FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ButtonsDxe/ButtonsDxe.depex
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/ButtonsDxe/ButtonsDxe.efi
     SECTION UI = "ButtonsDxe"
   }
 
-  INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
-  # INF MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
-  INF MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
+  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 }

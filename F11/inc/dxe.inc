@@ -101,6 +101,10 @@
     SECTION UI = "SPMI"
   }
 
+  INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+  INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+  INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+
 #   FILE DRIVER = 6925fad3-e243-4b69-ad61-3f978c8abc60 {
 #     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/TzDxe/TzDxe.depex
 #     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/TzDxe/TzDxe.efi
@@ -112,6 +116,8 @@
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/UFSDxe/UFSDxe.efi
     SECTION UI = "UFSDxe"
   }
+
+  INF FatPkg/EnhancedFatDxe/Fat.inf
 
   FILE DRIVER = E43128A8-8692-42B6-8AFA-676158578D18 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ULogDxe/ULogDxe.depex
