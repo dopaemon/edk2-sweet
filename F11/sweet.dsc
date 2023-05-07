@@ -155,7 +155,7 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
   # Simple Init
-  gSimpleInitTokenSpaceGuid.PcdGuiDefaultDPI|440
+  gSimpleInitTokenSpaceGuid.PcdGuiDefaultDPI|320
 
 ################################################################################
 #
