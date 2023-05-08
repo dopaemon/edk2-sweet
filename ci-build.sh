@@ -8,4 +8,4 @@ git clone https://github.com/tianocore/edk2.git --recursive
 git clone https://github.com/tianocore/edk2-platforms.git
 cd "$curdir"
 ./firstrun.sh
-./build.sh
+./build-sweet.sh
