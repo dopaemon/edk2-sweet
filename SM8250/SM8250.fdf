@@ -217,11 +217,11 @@ READ_LOCK_STATUS   = TRUE
     SECTION UI = "UsbMsdDxe"
  }
 
- # FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
- #    SECTION DXE_DEPEX = Dxe/DALSYSDxe/DALSYSDxe.depex
- #    SECTION PE32 = Dxe/DALSYSDxe/DALSYSDxe.efi
- #    SECTION UI = "DALSYSDxe"
- # }
+ FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
+    SECTION DXE_DEPEX = Dxe/DALSys/DALSys.depex
+    SECTION PE32 = Dxe/DALSys/DALSys.efi
+    SECTION UI = "DALSys"
+ }
 
  FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
     SECTION DXE_DEPEX = Dxe/ButtonsDxe/ButtonsDxe.depex
@@ -278,7 +278,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
- # INF RuleOverride = ACPITABLE SM8250/AcpiTables/AcpiTables.inf
+  # INF RuleOverride = ACPITABLE SM8250/AcpiTables/AcpiTables.inf
   !include SM8250/acpi.inc
 
   #

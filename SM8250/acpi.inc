@@ -20,8 +20,6 @@ SECTION RAW = SM8250/AcpiTables/7180/TPM2.acpi
 #SECTION RAW = SM8250/AcpiTables/mini/3.raw
 #SECTION RAW = SM8250/AcpiTables/mini/4.raw
 
-
-
 SECTION UI = "AcpiTables" 
 
 }
