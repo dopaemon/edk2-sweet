@@ -223,6 +223,12 @@ READ_LOCK_STATUS   = TRUE
  #    SECTION UI = "DALSys"
  # }
 
+ FILE DRIVER = 5776232E-082D-4B75-9A0E-FE1D13F7A5D9 {
+    SECTION DXE_DEPEX = Dxe/PmicDxe/PmicDxeLa.depex
+    SECTION PE32 = Dxe/PmicDxe/PmicDxeLa.efi
+    SECTION UI = "PmicDxe"
+ }
+
  FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
     SECTION DXE_DEPEX = Dxe/ButtonsDxe/ButtonsDxe.depex
     SECTION PE32 = Dxe/ButtonsDxe/ButtonsDxe.efi
