@@ -63,11 +63,11 @@
     SECTION UI = "UsbMsdDxe"
   }
 
- # FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
- #    SECTION DXE_DEPEX = Dxe/DALSys/DALSys.depex
- #    SECTION PE32 = Dxe/DALSys/DALSys.efi
- #    SECTION UI = "DALSys"
- # }
+ FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
+    SECTION DXE_DEPEX = Dxe/DALSYSDxe/DALSYSDxe.depex
+    SECTION PE32 = Dxe/DALSYSDxe/DALSYSDxe.efi
+    SECTION UI = "DALSys"
+ }
 
  FILE DRIVER = 5776232E-082D-4B75-9A0E-FE1D13F7A5D9 {
     SECTION DXE_DEPEX = Dxe/PmicDxe/PmicDxeLa.depex
@@ -75,7 +75,7 @@
     SECTION UI = "PmicDxe"
  }
 
- FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
+ FILE DRIVER = 5BD181DB-0487-4F1A-AE73-820E165611B3 {
     SECTION DXE_DEPEX = Dxe/ButtonsDxe/ButtonsDxe.depex
     SECTION PE32 = Dxe/ButtonsDxe/ButtonsDxe.efi
     SECTION UI = "ButtonsDxe"

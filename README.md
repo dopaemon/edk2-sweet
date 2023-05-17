@@ -1,11 +1,8 @@
-Attempt to create a minimal EDK2 for Redmi K20/MI 9T (Transplanted from Pixel3XL).
+Attempt to create a minimal EDK2 for Redmi Note 10 Pro (Transplanted from Pixel3XL).
 
-Snapdragon 730
+Snapdragon 732G
 
 ## Status
-Can boot winpe
-UFS
-USB(need powered usb hub)
 
 Boot Linux must add kernel parameters:clk_ignore_unused
 
