@@ -1,10 +1,4 @@
 // sort alphabetically
-#  FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
-#    SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ButtonsDxe/ButtonsDxe.depex
-#    SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/ButtonsDxe/ButtonsDxe.efi
-#    SECTION UI = "ButtonsDxe"
-#  }
-
   FILE DRIVER = 10e193df-9966-44e7-b17c-59dd831e20fc {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ChipInfo/ChipInfo.depex
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/ChipInfo/ChipInfo.efi
@@ -22,12 +16,6 @@
     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/CmdDbDxe/CmdDbDxe.efi
     SECTION UI = "CmdDbDxe"
   }
-
-#  FILE DRIVER = 8E9BD160-B184-11DF-94E2-0800200C9A66 {
-#    SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/DALSys/DALSys.depex
-#    SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/DALSys/DALSys.efi
-#    SECTION UI = "DALSys"
-#  }
 
   FILE DRIVER = 8681cc5a-0df6-441e-b4b8-e915c538f067 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/DALTLMM/DALTLMM.depex
@@ -65,11 +53,11 @@
     SECTION UI = "PlatformInfoDxeDriver"
   }
 
-#   FILE DRIVER = 5776232e-082d-4b75-9a0e-fe1d13f7a5d9 {
-#     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/PmicDxe/PmicDxe.depex
-#     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/PmicDxe/PmicDxe.efi
-#     SECTION UI = "PmicDxe"
-#   }
+  FILE DRIVER = 5776232e-082d-4b75-9a0e-fe1d13f7a5d9 {
+    SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/PmicDxe/PmicDxe.depex
+    SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/PmicDxe/PmicDxe.efi
+    SECTION UI = "PmicDxe"
+  }
 
   FILE DRIVER = CB29F4D1-7F37-4692-A416-93E82E219766 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/RpmhDxe/RpmhDxe.depex
@@ -77,11 +65,11 @@
     SECTION UI = "RpmhDxe"
   }
 
-#   FILE DRIVER = 2d7a83e3-e343-4ffb-9109-631f2ee11694 {
-#     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ScmDxe/ScmDxe.depex
-#     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/ScmDxe/ScmDxe.efi
-#     SECTION UI = "ScmDxe"
-#   }
+  FILE DRIVER = 2d7a83e3-e343-4ffb-9109-631f2ee11694 {
+    SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ScmDxe/ScmDxe.depex
+    SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/ScmDxe/ScmDxe.efi
+    SECTION UI = "ScmDxe"
+  }
 
   FILE DRIVER = 9c1eb71f-dd6c-4ed5-9f6a-5cc0ca789f16 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/ShmBridgeDxe/ShmBridgeDxe.depex
@@ -105,11 +93,11 @@
   INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
 
-#   FILE DRIVER = 6925fad3-e243-4b69-ad61-3f978c8abc60 {
-#     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/TzDxe/TzDxe.depex
-#     SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/TzDxe/TzDxe.efi
-#     SECTION UI = "TzDxe"
-#   }
+  FILE DRIVER = 6925fad3-e243-4b69-ad61-3f978c8abc60 {
+    SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/TzDxe/TzDxe.depex
+    SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/TzDxe/TzDxe.efi
+    SECTION UI = "TzDxe"
+  }
 
   FILE DRIVER = 0d35cd8e-97ea-4f9a-96af-0f0d89f76567 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/UFSDxe/UFSDxe.depex

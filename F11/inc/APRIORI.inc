@@ -35,11 +35,11 @@ APRIORI DXE {
     SECTION UI = "SmemDxe"
   }
 
-  FILE DRIVER = 8E9BD160-B184-11DF-94E2-0800200C9A66 {
-    SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/DALSys/DALSys.depex
-    SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/DALSys/DALSys.efi
-    SECTION UI = "DALSys"
-  }
+  # FILE DRIVER = 8E9BD160-B184-11DF-94E2-0800200C9A66 {
+  #   SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/DALSys/DALSys.depex
+  #   SECTION PE32 = Dxe/EFI_Binaries/Drivers/sm7150/DALSys/DALSys.efi
+  #   SECTION UI = "DALSys"
+  # }
 
   FILE DRIVER = af9763a2-033b-4109-8e17-56a98d380c92 {
     SECTION DXE_DEPEX = Dxe/EFI_Binaries/Drivers/sm7150/HWIODxeDriver/HWIODxeDriver.depex
